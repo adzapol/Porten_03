@@ -1,0 +1,134 @@
+@import 'scss/normalize.scss';
+
+// === Mixins ===
+@mixin font-PT {
+    font-family: 'PT Sans', sans-serif; // основной шрифт
+}
+
+@mixin font-playfair {
+    font-family: 'Playfair Display', serif; // дополнительный шрифт
+}
+// === / Mixins ===
+
+// === Variables ===
+$color-main: #000;
+$color-additional: #1F1F1F;
+$color-button: #fff;
+$color-headFoot: #969696;
+
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+$screen-lg-max: 1199px;
+
+// === / Variables ===
+
+// === Common ===
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    @include font-PT;
+    
+}
+
+.section-outer { // внешний блок 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section-inner { // внутренний блок
+    max-width: 1110px;
+    margin: 0 auto;    
+}
+
+a {
+    text-decoration: none;
+    color: $color-button;
+}
+// === / Common ===
+
+.section-header-topper {
+    background-color: $color-main;
+
+    &-top-line {
+        display: flex;
+        justify-content: space-between;
+        color: $color-headFoot;
+        font-size: 12px;
+
+        &__left {
+            display: flex;
+            p {
+                margin: 14px 0 14px 15px;
+            }
+        }
+        &__right {
+            a {
+                display: flex;
+                color: $color-headFoot;
+                p {
+                    margin-left: 10px;
+                }
+            }
+            a:hover {
+                color: white;
+                transition: .3s;
+            }
+        }
+    }
+    @media (max-width: $screen-sm) {
+        &-top-line {
+            justify-content: center;
+            &__left {
+                display: none;
+            }
+        }
+    }
+}
+
+.section-header-middle {
+    background-color: $color-additional;
+    
+    &-second-line {
+        display: flex;
+        justify-content: space-between;
+
+        &__logo {
+            padding: 15px 0 15px 0;
+        }
+        &__nav {
+            padding: 31px 20px;
+            a {
+                background-color: aqua;
+                
+            }
+        }
+    }
+}
+
+
+.section-collection {
+    
+    background-color: slategray;
+}
+
+.section-product {
+    
+    background-color: tan;
+}
+
+.section-brands {
+    
+    background-color: tomato;
+}
+
+.section-footer {
+    
+    background-color: yellowgreen;
+}
