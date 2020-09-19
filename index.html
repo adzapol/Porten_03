@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Porten</title>
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@400;700&display=swap"> <!--подключение шрифта-->
@@ -33,25 +33,48 @@
                     <div class="section-header-middle-second-line__logo">
                         <a href="#"><img src="img/PORTEN.svg" alt="logo"></a>
                     </div>
-                    <div class="section-header-middle-second-line__nav">
-                        <a href="#like">Понравилось</a>
-                        <a href="#account">Личный кабинет</a>
-                        <a href="#setting">Настройки</a>
-                        <img src="img/bx_bx-cart.svg" alt="bx-cart">
-                        <img src="img/gridicons_search.svg" alt="search">
+                    <div class="section-header-middle-second-line-nav">
+                        <div class="section-header-middle-second-line-nav__menu fixed">
+                            <a href="#like">Понравилось</a>
+                            <a href="#account">Личный кабинет</a>
+                            <a href="#setting">Настройки</a>
+                        </div>
+                        <a href="#" id="menu" class="burger hidden icon"></a>
+                        <a href="#" class="none"><img src="img/bx_bx-cart.svg" alt="bx-cart"></a>
+                        <a href="#" class="none"><img src="img/gridicons_search.svg" alt="search"></a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- / header-middle-->
 
-        <!--collection-->
-        <section class="section-outer section-collection">
+        <!--header-bottom-->
+        <section class="section-outer section-header-bottom">
             <div class="section-inner">
-                section-collection
+                <div class="section-header-bottom-content">
+                    <img src="img/full-logo.svg" alt="full-logo">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut in. Fringilla a diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis. Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl viverra.</p>
             </div>
         </section>
-        <!-- / collection-->
+        <!-- / header-bottom-->
+
+        <!--new-collection-->
+        <section class="section-outer-no-padding section-new-collection">
+            <div class="section-inner-no-padding">
+                <div class="section-new-collection-content">
+                    <div class="section-new-collection-content-product">product</div>
+                    <div class="section-new-collection-content-catalog">
+                        <div class="section-new-collection-content-catalog-collection">
+                            <h2>Новая коллекция</h2>
+                            <div></div>
+                            <button><a>Каталог</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / new-collection-->
 
         <!--product-->
         <section class="section-outer section-product">
@@ -76,5 +99,6 @@
             </div>
         </footer>
         <!-- / footer-->
+        <script src="js/main.js"></script>
     </body>
 </html>
