@@ -339,7 +339,41 @@ h2 {
   font-size: 36px;
   line-height: 48px;
   text-align: center;
-  text-decoration: uppercase; }
+  text-transform: uppercase; }
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase; }
+
+.bg {
+  background-color: #191B1C; }
+  .bg .picture {
+    margin-top: 55px;
+    margin-bottom: 23px; }
+
+.price {
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  font-size: 16px; }
+
+.btn {
+  width: 138px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 12px 28px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.linear {
+  width: 120px;
+  margin: 0 auto 30px auto;
+  border: 1px solid #fff; }
 
 .section-header-topper {
   background-color: #000; }
@@ -358,7 +392,7 @@ h2 {
       .section-header-topper-top-line__right a p {
         margin-left: 10px; }
     .section-header-topper-top-line__right a:hover {
-      color: white;
+      color: #fff;
       transition: .3s; }
   @media (max-width: 576px) {
     .section-header-topper-top-line {
@@ -449,11 +483,42 @@ h2 {
     display: flex; }
     .section-new-collection-content-product {
       flex-basis: 55%;
-      background-color: salmon; }
+      background-color: #000; }
+      .section-new-collection-content-product-items h2 {
+        margin-top: 93px; }
+      .section-new-collection-content-product-items-main {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 80px;
+        padding-right: 80px; }
+        .section-new-collection-content-product-items-main-item {
+          display: flex;
+          flex-direction: column; }
+          .section-new-collection-content-product-items-main-item .bg .picture:first-child {
+            margin-left: 0; }
+      .section-new-collection-content-product-items .linear {
+        margin-bottom: 50px; }
     .section-new-collection-content-catalog {
       flex-basis: 45%;
-      background: url("/img/Rectangle 8.png") 100% no-repeat;
+      background: url("/img/Rectangle 8.png") no-repeat;
       background-size: cover; }
+      .section-new-collection-content-catalog-collection {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .section-new-collection-content-catalog-collection h2 {
+          margin-top: 484px;
+          margin-bottom: 25px; }
+        .section-new-collection-content-catalog-collection button {
+          margin-bottom: 100px; }
+  @media (max-width: 767px) {
+    .section-new-collection-content-catalog-collection h2 {
+      font-size: 26px; } }
+  @media (max-width: 576px) {
+    .section-new-collection-content {
+      flex-direction: column; }
+      .section-new-collection-content-catalog {
+        order: -1; } }
 
 .section-product {
   background-color: tan; }

@@ -14,6 +14,7 @@
 $color-main: #000;
 $color-additional: #1F1F1F;
 $color-headFoot: #969696;
+$color-item-bg: #191B1C;
 
 $color-white: #fff;
 
@@ -73,8 +74,51 @@ h2 {
     font-size: 36px;
     line-height: 48px;
     text-align: center;
-    text-decoration: uppercase;
+    text-transform: uppercase;
 
+}
+
+h3 {
+    @include font-playfair;
+
+    color: $color-white;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.bg {
+    background-color: $color-item-bg;
+    
+    .picture {
+        margin-top: 55px;
+        margin-bottom: 23px;
+    }
+}
+
+.price {
+    @include font-playfair;
+
+    color: $color-white;
+    font-size: 16px;
+}
+
+.btn {
+    width: 138px;
+    border: 1px solid $color-white;
+    background-color: transparent;
+    padding: 12px 28px;
+    cursor: pointer;
+    color: $color-white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.linear {
+    width: 120px;
+    margin: 0 auto 30px auto;
+    border: 1px solid $color-white;
 }
 // === / Common ===
 
@@ -102,7 +146,7 @@ h2 {
                 }
             }
             a:hover {
-                color: white;
+                color: $color-white;
                 transition: .3s;
             }
         }
@@ -152,7 +196,7 @@ h2 {
             }
         }
     }
-        @media (max-width: $screen-sm) {
+    @media (max-width: $screen-sm) {
         &-second-line {
             &-nav {
                 .fixed {
@@ -244,21 +288,86 @@ h2 {
 
         &-product {
             flex-basis: 55%;
-            background-color: salmon;
-        }
-        &-catalog {
-            flex-basis: 45%;
-            background: url('/img/Rectangle\ 8.png') 100% no-repeat;
-            background-size: cover;
-            &-collection {
-                h2 {}
-                div {}
-                button {
-                    a {}
+            background-color: $color-main;
+
+            &-items {
+                h2 {
+                    margin-top: 93px;
+                }
+                &-main {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 80px;
+                    padding-right: 80px;
+                    
+                    
+                    &-item {
+                        
+                        display: flex;
+                        flex-direction: column;
+                        .bg {
+                            .picture:first-child {
+                                margin-left: 0;
+                            }
+                        }
+                        h3 {}
+                        .price {}
+                    }
+                }
+                .linear {
+                    margin-bottom: 50px;
                 }
             }
         }
-    } 
+
+        &-catalog {
+            flex-basis: 45%;
+            background: url('/img/Rectangle\ 8.png') no-repeat;
+            background-size: cover;
+            &-collection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2 {
+                    margin-top: 484px;
+                    margin-bottom: 25px;
+                }
+                div {
+
+                }
+                button {
+                    margin-bottom: 100px;
+                }
+            }
+        }
+    }
+    @media (max-width: $screen-sm-max) {
+        &-content {
+            &-product {}
+            &-catalog {
+                &-collection {
+                    h2 {
+                        font-size: 26px;
+                    }
+                    button {}
+                }
+            }
+        }
+    }
+    @media (max-width: $screen-sm) {
+        &-content {
+            flex-direction: column;
+            
+            &-product {}
+            &-catalog {
+                order: -1;
+                &-collection {
+                    h2 {}
+                    button {}
+                }
+            }
+        }
+    }
 }
 
 .section-product {
