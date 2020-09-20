@@ -453,7 +453,7 @@ h3 {
       margin-bottom: 20px; } }
 
 .section-header-bottom {
-  background: url("/img/Rectangle 3.png") 50% 50% no-repeat;
+  background: url("/img/header.png") 50% 50% no-repeat;
   background-size: cover;
   height: 85vh;
   display: flex;
@@ -507,7 +507,7 @@ h3 {
         margin-bottom: 50px; }
     .section-new-collection-content-catalog {
       flex-basis: 45%;
-      background: url("/img/Rectangle 8.png") no-repeat;
+      background: url("/img/post_1.png") no-repeat;
       background-size: cover; }
       .section-new-collection-content-catalog-collection {
         display: flex;
@@ -541,7 +541,7 @@ h3 {
     display: flex; }
     .section-old-collection-content-picture {
       flex-basis: 45%;
-      background: url("/img/Rectangle 9.png") no-repeat;
+      background: url("/img/post_2.png") no-repeat;
       background-size: cover; }
     .section-old-collection-content-product {
       flex-basis: 55%; }
@@ -586,11 +586,19 @@ h3 {
     justify-content: space-between;
     padding-bottom: 80px; }
     .section-new-goods-main-content-products-item {
-      margin-bottom: 40px; }
-    .section-new-goods-main-content-products-item {
-      margin-left: 23px; }
+      margin-bottom: 40px;
+      margin-left: 23px;
+      margin: 0 auto 40px 23px; }
+    .section-new-goods-main-content-products-item:nth-child(1) {
+      margin-left: 0; }
+    .section-new-goods-main-content-products-item:nth-child(5) {
+      margin-left: 0; }
     @media (max-width: 768px) {
       .section-new-goods-main-content-products-item {
+        margin: 10px auto 10px auto; }
+      .section-new-goods-main-content-products-item:nth-child(1) {
+        margin: 10px auto 10px auto; }
+      .section-new-goods-main-content-products-item:nth-child(5) {
         margin: 10px auto 10px auto; } }
   @media (max-width: 768px) {
     .section-new-goods-main-content-products {
@@ -612,7 +620,7 @@ h3 {
       padding-bottom: 20px; } }
 
 .section-footer {
-  background: url("/img/Rectangle 15.png") 50% 50% no-repeat;
+  background: url("/img/support.png") 50% 50% no-repeat;
   background-size: cover; }
   .section-footer-content {
     display: flex;

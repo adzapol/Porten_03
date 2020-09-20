@@ -249,7 +249,7 @@ h3 {
 }
 
 .section-header-bottom {
-    background: url('/img/Rectangle 3.png') 50% 50% no-repeat;
+    background: url('/img/header.png') 50% 50% no-repeat;
     background-size: cover;
     height: 85vh;
     display: flex;
@@ -328,7 +328,7 @@ h3 {
 
         &-catalog {
             flex-basis: 45%;
-            background: url('/img/Rectangle 8.png') no-repeat;
+            background: url('/img/post_1.png') no-repeat;
             background-size: cover;
             &-collection {
                 display: flex;
@@ -390,7 +390,7 @@ h3 {
         display: flex;
         &-picture {
             flex-basis: 45%;
-            background: url('/img/Rectangle 9.png') no-repeat;
+            background: url('/img/post_2.png') no-repeat;
             background-size: cover;
         }
         &-product {
@@ -458,16 +458,27 @@ h3 {
                 flex-wrap: wrap;
                 justify-content: space-between;
                 padding-bottom: 80px;
-                
+
                 &-item {
                     margin-bottom: 40px;
+                    margin-left: 23px;
+                    margin: 0 auto 40px 23px; 
+                }
+                &-item:nth-child(1) {
+                    margin-left: 0;
+                }
+                &-item:nth-child(5) {
+                    margin-left: 0;
                 }
 
-                &-item:not(nth-child(1), nth-child(4)) {
-                    margin-left: 23px;
-                }
                 @media (max-width: $screen-md) {
                     &-item {
+                        margin: 10px auto 10px auto;
+                    }
+                    &-item:nth-child(1) {
+                        margin: 10px auto 10px auto;
+                    }
+                    &-item:nth-child(5) {
                         margin: 10px auto 10px auto;
                     }
                 }
@@ -509,7 +520,7 @@ h3 {
 }
 
 .section-footer {  
-    background: url('/img/Rectangle 15.png') 50% 50% no-repeat;
+    background: url('/img/support.png') 50% 50% no-repeat;
     background-size: cover;
     &-content {
         display: flex;
@@ -607,9 +618,6 @@ h3 {
             align-items: center;
             width: 80%;
             margin: 0 auto;
-            &-shop {
-                
-            }
             &-categories {
                 align-self: flex-start;
                 &-one {
