@@ -617,7 +617,9 @@ h3 {
     .section-brands-container-title h2 {
       font-size: 24px; }
     .section-brands-container-brand {
-      padding-bottom: 20px; } }
+      padding-bottom: 20px; }
+      .section-brands-container-brand img {
+        margin: 0 auto; } }
 
 .section-footer {
   background: url(../img/support.png) 50% 50% no-repeat;
@@ -696,8 +698,14 @@ h3 {
         .section-footer-content-categories-two .element {
           flex-basis: 45%;
           font-size: 10px; }
-      .section-footer-content-mail button {
-        width: 180px; } }
+      .section-footer-content-mail {
+        display: flex;
+        flex-direction: column; }
+        .section-footer-content-mail input {
+          margin: 0 auto 20px auto; }
+        .section-footer-content-mail button {
+          width: 180px;
+          margin: 0 auto; } }
 
 .section-coopyright {
   background-color: #000; }

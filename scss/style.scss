@@ -514,6 +514,9 @@ h3 {
             }
             &-brand {
                 padding-bottom: 20px;
+                img {
+                    margin: 0 auto;
+                }
             }
         }
     }
@@ -633,8 +636,14 @@ h3 {
                 }
             }
             &-mail {
+                display: flex;
+                flex-direction: column;
+                input {
+                    margin: 0 auto 20px auto;
+                }
                 button {
                     width: 180px;
+                    margin: 0 auto;
                 }
             }
         }
