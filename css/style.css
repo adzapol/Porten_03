@@ -453,7 +453,7 @@ h3 {
       margin-bottom: 20px; } }
 
 .section-header-bottom {
-  background: url("../img/header.jpg") 50% 50% no-repeat;
+  background: url(../img/header.png) 50% 50% no-repeat;
   background-size: cover;
   height: 85vh;
   display: flex;
